@@ -1,0 +1,494 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Titulares de Secciones */
+
+h2 {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+
+/* Encabezado */
+
+/* Barra de navegación */
+
+/* Logo */
+
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.navbar-brand img {
+    height: 30px;
+}
+
+.navbar-brand p {
+    margin: 0px;
+    margin-left: 10px;
+    font-weight: 800;
+    color: rgb(72, 194, 194);
+
+}
+
+/* Portada Carrousel */
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Servicios */
+
+/* Sección Servicios */
+#services {
+    padding: 80px 20px 60px 20px;
+    background-image: linear-gradient(160deg, rgb(34, 207, 184),rgb(25, 191, 206));
+    text-align: center;
+}
+
+/* Alineación de elementos Cards */
+
+
+#content-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    gap: 60px;
+    margin: 40px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Sección Servicios: Cards */
+
+.card-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    max-width: 250px;
+    border: 0px;
+}
+
+/* Sección Servicios: Imagen */
+
+.card-services img {
+    width: 200px;
+}
+
+/* Sección Servicios: Textos */
+
+.card-services h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.card-services p {
+    text-align: center;
+}
+
+/* Portfolio */
+
+/* Sección Portfolio */
+#works {
+    padding: 80px 20px 50px 20px;
+    text-align: center;
+}
+
+/* Márgenes */
+
+.content-works {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Grilla Cards Proyectos */
+
+.grid-works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    gap: 25px;
+    margin: 40px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover Card: Texto y transparencia */
+
+#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
+    max-width: 1920px;
+}
+
+#portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box, #portfolio .container-xxl .portfolio-box {
+    position: relative;
+    display: block;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption, #portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.25s ease;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+/* Sección Proyectos: Cards */
+
+.portfolio-box {
+    height: 260px;
+    width: 400px;
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Sección Proyectos: Botón a Todos los Proyectos */
+
+.button-works {
+    width: 180px;
+    height: 45px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    transition: .5s;
+}
+
+.button-works a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.button-works:hover {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.button-works a:hover {
+    color: white;
+}
+
+/* Sobre Mí */
+
+/* Sección Sobre Mí */
+
+#about {
+    padding: 80px 20px 50px 20px;
+    background-image: linear-gradient(160deg, rgb(34, 207, 184),rgb(25, 191, 206));
+}
+
+/* Sección Sobre Mí: Imagen */
+
+.about-img {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección Sobre Mí: Botón a Currículum */
+
+.button-cv {
+    width: 180px;
+    height: 45px;
+    border-color: white;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    transition: .5s;
+}
+
+.button-cv a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.button-cv:hover {
+    border-color: white;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.button-cv a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* Contacto */
+
+/* Sección Contacto */
+
+#contact {
+    padding: 80px 20px 10px 20px;
+    text-align: center;
+}
+
+/* Sección Contacto: Botón Enviar */
+
+.button-submit {
+    margin-top: 40px;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: black;
+}
+
+.rrss img {
+    width: 25px;
+}
+
+.footer-mail {
+    width: 25px;
+    margin-right: 5px;
+}
+
+/* PÁGINA: Proyectos Individuales */
+
+.title-project {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.description-project {
+    font-size: 16px;
+    color: rgb(94, 94, 94);
+}
+
+/* Grilla de galería de imágenes */
+
+/* Márgenes */
+
+.content-galery {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Grilla Cards Proyectos */
+
+.grid-galery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imágenes */
+
+.img-galery {
+    border: 2px solid rgb(168, 168, 168, 0);
+    transition: 0.4s;
+}
+
+.img-galery:hover {
+    transform: scale(1.03);
+    border: 2px solid rgb(168, 168, 168, 0.4);
+}
+
+/* Frames */
+
+.frame {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.frame iframe{
+    width: 94%;
+    height: 350px;
+    border-radius: 15px;
+}
+
+/* PÁGINA: Todos los proyectos */
+
+.title-head-page {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-work {
+    transition: .5s;
+}
+
+.card-work:hover {
+    transform: scale(1.03)
+}
+
+/* PÁGINA: Currículum */
+
+.title-curriculum h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.content-cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+}
+
+.categoria {
+    margin-bottom: 20px;
+}
+
+.title_cat {
+    margin-bottom: 10px;
+}
+
+.title_cat h2 {
+    font-weight: 350;
+    font-size: 30px;
+}
+
+.rubro {
+    margin: 10px 30px 20px;
+}
+
+.rubro h3 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.rubro p {
+    font-weight: 350;
+    font-size: 17px;
+}
+
+.rubro ul li {
+    margin-left: 25px;
+    list-style: none;
+}
+
+.herramientas img {
+    margin: 5px;
+    width: 40px;
+}
+
+.herramientas img:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Medias */
+
+@media (max-width: 991px) {
+    /* Navbar button responsive */
+    .burgernav {
+        border: 1px solid rgb(216, 216, 216) !important;
+        margin-right: 2%;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-responsive {
+        display: none;
+    }
+    
+    /* Redes sociales Footer */
+    .btn-social {
+        height: 2.5rem;
+        width: 2.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border-radius: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .grid-works {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+        gap: 15px;
+        margin: 20px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio-box {
+        height: 260px;
+        width: 200px;
+    }
+
+    .portfolio-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .grid-galery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+        gap: 18px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 325px) {
+    .navbar-brand p {
+        display: none;
+    }
+}
