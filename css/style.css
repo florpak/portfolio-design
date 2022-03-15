@@ -1,0 +1,421 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  position: relative;
+  padding-bottom: 5.5rem; }
+
+/* Titulares de Secciones */
+h2 {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px; }
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: black; }
+
+.rrss img {
+  width: 25px; }
+
+.footer-mail {
+  width: 25px;
+  margin-right: 5px; }
+
+/* Responsive Footer */
+@media (min-width: 992px) {
+  .btn-social {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%; } }
+
+* {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+/* Encabezado */
+/* Barra de navegación */
+/* Logo */
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px; }
+  .navbar-brand img {
+    height: 30px; }
+  .navbar-brand p {
+    margin: 0px;
+    margin-left: 10px;
+    font-weight: 800;
+    color: #48c2c2; }
+
+/* Portada Carrousel */
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh; }
+
+/* Servicios */
+/* Sección Servicios */
+#services {
+  padding: 80px 20px 60px 20px;
+  background-image: linear-gradient(160deg, #22cfb8, #19bfce);
+  text-align: center;
+  /* Alineación de elementos Cards */ }
+  #services #content-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    gap: 60px;
+    margin: 40px 0px;
+    justify-content: center;
+    align-items: center;
+    /* Sección Servicios: Cards */ }
+    #services #content-cards .card-services {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      max-width: 250px;
+      border: 0px;
+      /* Sección Servicios: Imagen */
+      /* Sección Servicios: Textos */ }
+      #services #content-cards .card-services img {
+        width: 200px; }
+      #services #content-cards .card-services h3 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 15px; }
+      #services #content-cards .card-services p {
+        text-align: center; }
+
+/* Portfolio */
+/* Sección Portfolio */
+#works {
+  padding: 80px 20px 50px 20px;
+  text-align: center;
+  /* Sección Proyectos: Botón a Todos los Proyectos */ }
+  #works #portfolio {
+    margin: 1px;
+    /* Márgenes */ }
+    #works #portfolio .content-works, #works #portfolio .container-sm, #works #portfolio .container-md, #works #portfolio .container-lg, #works #portfolio .container-xl, #works #portfolio .container-xxl {
+      max-width: 1920px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      /* Grilla Cards Proyectos */ }
+      #works #portfolio .content-works .grid-works, #works #portfolio .container-sm .grid-works, #works #portfolio .container-md .grid-works, #works #portfolio .container-lg .grid-works, #works #portfolio .container-xl .grid-works, #works #portfolio .container-xxl .grid-works {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+        gap: 25px;
+        margin: 40px 0px;
+        justify-content: center;
+        align-items: center;
+        /* Sección Proyectos: Cards */ }
+        #works #portfolio .content-works .grid-works .portfolio-box, #works #portfolio .container-sm .grid-works .portfolio-box, #works #portfolio .container-md .grid-works .portfolio-box, #works #portfolio .container-lg .grid-works .portfolio-box, #works #portfolio .container-xl .grid-works .portfolio-box, #works #portfolio .container-xxl .grid-works .portfolio-box {
+          position: relative;
+          display: block;
+          height: 260px;
+          width: 400px;
+          transition: 0.5s;
+          /* Imagen */ }
+          #works #portfolio .content-works .grid-works .portfolio-box:hover, #works #portfolio .container-sm .grid-works .portfolio-box:hover, #works #portfolio .container-md .grid-works .portfolio-box:hover, #works #portfolio .container-lg .grid-works .portfolio-box:hover, #works #portfolio .container-xl .grid-works .portfolio-box:hover, #works #portfolio .container-xxl .grid-works .portfolio-box:hover {
+            transform: scale(1.03); }
+          #works #portfolio .content-works .grid-works .portfolio-box img, #works #portfolio .container-sm .grid-works .portfolio-box img, #works #portfolio .container-md .grid-works .portfolio-box img, #works #portfolio .container-lg .grid-works .portfolio-box img, #works #portfolio .container-xl .grid-works .portfolio-box img, #works #portfolio .container-xxl .grid-works .portfolio-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px; }
+          #works #portfolio .content-works .grid-works .portfolio-box .portfolio-box-caption, #works #portfolio .container-sm .grid-works .portfolio-box .portfolio-box-caption, #works #portfolio .container-md .grid-works .portfolio-box .portfolio-box-caption, #works #portfolio .container-lg .grid-works .portfolio-box .portfolio-box-caption, #works #portfolio .container-xl .grid-works .portfolio-box .portfolio-box-caption, #works #portfolio .container-xxl .grid-works .portfolio-box .portfolio-box-caption {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            opacity: 0;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            transition: opacity 0.25s ease;
+            text-align: center;
+            border-radius: 15px; }
+            #works #portfolio .content-works .grid-works .portfolio-box .portfolio-box-caption:hover, #works #portfolio .container-sm .grid-works .portfolio-box .portfolio-box-caption:hover, #works #portfolio .container-md .grid-works .portfolio-box .portfolio-box-caption:hover, #works #portfolio .container-lg .grid-works .portfolio-box .portfolio-box-caption:hover, #works #portfolio .container-xl .grid-works .portfolio-box .portfolio-box-caption:hover, #works #portfolio .container-xxl .grid-works .portfolio-box .portfolio-box-caption:hover {
+              opacity: 1; }
+            #works #portfolio .content-works .grid-works .portfolio-box .portfolio-box-caption .project-category, #works #portfolio .container-sm .grid-works .portfolio-box .portfolio-box-caption .project-category, #works #portfolio .container-md .grid-works .portfolio-box .portfolio-box-caption .project-category, #works #portfolio .container-lg .grid-works .portfolio-box .portfolio-box-caption .project-category, #works #portfolio .container-xl .grid-works .portfolio-box .portfolio-box-caption .project-category, #works #portfolio .container-xxl .grid-works .portfolio-box .portfolio-box-caption .project-category {
+              font-size: 1.2rem;
+              font-weight: 600;
+              text-transform: uppercase;
+              color: white; }
+            #works #portfolio .content-works .grid-works .portfolio-box .portfolio-box-caption .project-name, #works #portfolio .container-sm .grid-works .portfolio-box .portfolio-box-caption .project-name, #works #portfolio .container-md .grid-works .portfolio-box .portfolio-box-caption .project-name, #works #portfolio .container-lg .grid-works .portfolio-box .portfolio-box-caption .project-name, #works #portfolio .container-xl .grid-works .portfolio-box .portfolio-box-caption .project-name, #works #portfolio .container-xxl .grid-works .portfolio-box .portfolio-box-caption .project-name {
+              font-size: 1rem;
+              font-weight: 300; }
+  #works .button-works {
+    width: 180px;
+    height: 45px;
+    border-color: none;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    transition: 0.5s; }
+    #works .button-works:hover {
+      background-color: rgba(0, 0, 0, 0.8); }
+    #works .button-works a {
+      text-decoration: none;
+      color: black;
+      transition: .5s; }
+      #works .button-works a:hover {
+        color: white; }
+
+/* Sobre Mí */
+/* Sección Sobre Mí */
+#about {
+  padding: 80px 20px 50px 20px;
+  background-image: linear-gradient(160deg, #22cfb8, #19bfce);
+  /* Sección Sobre Mí: Imagen */
+  /* Sección Sobre Mí: Botón a Currículum */ }
+  #about .about-img {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
+  #about .button-cv {
+    width: 180px;
+    height: 45px;
+    border-color: white;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    transition: 0.5s; }
+    #about .button-cv:hover {
+      border-color: white;
+      background-color: white; }
+    #about .button-cv a {
+      text-decoration: none;
+      color: white;
+      transition: .5s; }
+      #about .button-cv a:hover {
+        color: black; }
+
+/* Contacto */
+/* Sección Contacto */
+#contact {
+  padding: 80px 20px 10px 20px;
+  text-align: center;
+  /* Sección Contacto: Botón Enviar */ }
+  #contact .button-submit {
+    margin-top: 40px; }
+    #contact .button-submit button {
+      width: 180px;
+      height: 45px;
+      border-color: none;
+      border-radius: 50px;
+      margin-bottom: 40px;
+      transition: 0.5s; }
+      #contact .button-submit button:hover {
+        background-color: rgba(0, 0, 0, 0.8); }
+
+/* PÁGINA: Todos los proyectos */
+.works {
+  margin-bottom: 14rem; }
+
+.title-head-page, .title-project {
+  font-size: 40px;
+  font-weight: 1000;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem; }
+
+.card-work {
+  transition: .5s; }
+  .card-work:hover {
+    transform: scale(1.03); }
+
+/* PÁGINA: Proyecto Individual */
+.title-project {
+  font-weight: 700; }
+
+.description-project {
+  font-size: 16px;
+  color: #5e5e5e; }
+
+/* Breadcrum */
+.back-project {
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none; }
+  .back-project:hover {
+    color: #48c2c2; }
+
+.actual-project {
+  font-size: 16px;
+  font-weight: 300;
+  color: grey;
+  text-decoration: none; }
+
+/* Grilla Galería de Imágenes */
+#works {
+  padding: 80px 20px 50px 20px;
+  text-align: center; }
+  #works #portfolio {
+    margin: 1px;
+    /* Márgenes */ }
+    #works #portfolio .content-galery, #works #portfolio .container-sm, #works #portfolio .container-md, #works #portfolio .container-lg, #works #portfolio .container-xl, #works #portfolio .container-xxl {
+      max-width: 1920px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      /* Grilla Cards Proyectos */
+      /* Frames */ }
+      #works #portfolio .content-galery .grid-galery, #works #portfolio .container-sm .grid-galery, #works #portfolio .container-md .grid-galery, #works #portfolio .container-lg .grid-galery, #works #portfolio .container-xl .grid-galery, #works #portfolio .container-xxl .grid-galery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+        gap: 18px;
+        justify-content: center;
+        align-items: center; }
+        #works #portfolio .content-galery .grid-galery .portfolio-box, #works #portfolio .container-sm .grid-galery .portfolio-box, #works #portfolio .container-md .grid-galery .portfolio-box, #works #portfolio .container-lg .grid-galery .portfolio-box, #works #portfolio .container-xl .grid-galery .portfolio-box, #works #portfolio .container-xxl .grid-galery .portfolio-box {
+          position: relative;
+          display: block;
+          height: 260px;
+          width: 400px;
+          /* Imagen */ }
+          #works #portfolio .content-galery .grid-galery .portfolio-box .img-galery, #works #portfolio .container-sm .grid-galery .portfolio-box .img-galery, #works #portfolio .container-md .grid-galery .portfolio-box .img-galery, #works #portfolio .container-lg .grid-galery .portfolio-box .img-galery, #works #portfolio .container-xl .grid-galery .portfolio-box .img-galery, #works #portfolio .container-xxl .grid-galery .portfolio-box .img-galery {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 2px solid rgba(168, 168, 168, 0);
+            transition: 0.4s; }
+            #works #portfolio .content-galery .grid-galery .portfolio-box .img-galery:hover, #works #portfolio .container-sm .grid-galery .portfolio-box .img-galery:hover, #works #portfolio .container-md .grid-galery .portfolio-box .img-galery:hover, #works #portfolio .container-lg .grid-galery .portfolio-box .img-galery:hover, #works #portfolio .container-xl .grid-galery .portfolio-box .img-galery:hover, #works #portfolio .container-xxl .grid-galery .portfolio-box .img-galery:hover {
+              transform: scale(1.03);
+              border: 2px solid rgba(168, 168, 168, 0.4); }
+      #works #portfolio .content-galery .frame, #works #portfolio .container-sm .frame, #works #portfolio .container-md .frame, #works #portfolio .container-lg .frame, #works #portfolio .container-xl .frame, #works #portfolio .container-xxl .frame {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px; }
+        #works #portfolio .content-galery .frame iframe, #works #portfolio .container-sm .frame iframe, #works #portfolio .container-md .frame iframe, #works #portfolio .container-lg .frame iframe, #works #portfolio .container-xl .frame iframe, #works #portfolio .container-xxl .frame iframe {
+          width: 94%;
+          height: 350px;
+          border-radius: 15px; }
+
+/* PÁGINA: Currículum */
+/* Márgenes del Título Principal */
+.title-curriculum {
+  margin-top: 100px;
+  margin-bottom: 50px; }
+
+/* Cuerpo de CV */
+.content-cv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  margin-left: 3rem; }
+  .content-cv .categoria {
+    margin-bottom: 20px; }
+    .content-cv .categoria .title_cat {
+      margin-bottom: 10px; }
+      .content-cv .categoria .title_cat h3 {
+        font-weight: 350;
+        font-size: 30px; }
+    .content-cv .categoria .rubro {
+      margin: 10px 30px 20px; }
+      .content-cv .categoria .rubro h4 {
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 3px; }
+      .content-cv .categoria .rubro p {
+        font-weight: 350;
+        font-size: 17px; }
+        .content-cv .categoria .rubro p li {
+          margin-left: 25px;
+          list-style: none; }
+    .content-cv .categoria img {
+      margin: 5px;
+      width: 40px; }
+      .content-cv .categoria img:hover {
+        opacity: 0.6; }
+
+/* Responsive Medias */
+/* Menú responsive */
+@media (max-width: 991px) {
+  .main-nav {
+    display: none; }
+  .nav-responsive {
+    visibility: visible;
+    /* Navbar button responsive */ }
+    .nav-responsive .burgernav {
+      border: 1px solid #d8d8d8 !important;
+      margin-right: 2%; } }
+
+/* Menú responsive: Menú plegable */
+@media (min-width: 992px) {
+  .nav-responsive {
+    display: none; } }
+
+/* Galerías de Portfolio */
+@media (max-width: 450px) {
+  #works {
+    padding: 80px 20px 50px 20px;
+    text-align: center; }
+    #works #portfolio {
+      margin: 1px;
+      /* Márgenes */ }
+      #works #portfolio .content-works, #works #portfolio .container-sm, #works #portfolio .container-md, #works #portfolio .container-lg, #works #portfolio .container-xl, #works #portfolio .container-xxl {
+        max-width: 1920px;
+        margin-top: 50px;
+        margin-bottom: 50px; }
+        #works #portfolio .content-works .grid-works, #works #portfolio .container-sm .grid-works, #works #portfolio .container-md .grid-works, #works #portfolio .container-lg .grid-works, #works #portfolio .container-xl .grid-works, #works #portfolio .container-xxl .grid-works {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+          gap: 15px;
+          margin: 20px 0px;
+          justify-content: center;
+          align-items: center; }
+          #works #portfolio .content-works .grid-works .portfolio-box, #works #portfolio .container-sm .grid-works .portfolio-box, #works #portfolio .container-md .grid-works .portfolio-box, #works #portfolio .container-lg .grid-works .portfolio-box, #works #portfolio .container-xl .grid-works .portfolio-box, #works #portfolio .container-xxl .grid-works .portfolio-box {
+            height: 260px;
+            width: 200px; }
+            #works #portfolio .content-works .grid-works .portfolio-box img, #works #portfolio .container-sm .grid-works .portfolio-box img, #works #portfolio .container-md .grid-works .portfolio-box img, #works #portfolio .container-lg .grid-works .portfolio-box img, #works #portfolio .container-xl .grid-works .portfolio-box img, #works #portfolio .container-xxl .grid-works .portfolio-box img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 15px; }
+  #works {
+    padding: 80px 20px 50px 20px;
+    text-align: center; }
+    #works #portfolio {
+      margin: 1px;
+      /* Márgenes */ }
+      #works #portfolio .content-galery, #works #portfolio .container-sm, #works #portfolio .container-md, #works #portfolio .container-lg, #works #portfolio .container-xl, #works #portfolio .container-xxl {
+        max-width: 1920px;
+        margin-top: 50px;
+        margin-bottom: 50px; }
+        #works #portfolio .content-galery .grid-galery, #works #portfolio .container-sm .grid-galery, #works #portfolio .container-md .grid-galery, #works #portfolio .container-lg .grid-galery, #works #portfolio .container-xl .grid-galery, #works #portfolio .container-xxl .grid-galery {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+          gap: 18px;
+          justify-content: center;
+          align-items: center; }
+          #works #portfolio .content-galery .grid-galery .portfolio-box, #works #portfolio .container-sm .grid-galery .portfolio-box, #works #portfolio .container-md .grid-galery .portfolio-box, #works #portfolio .container-lg .grid-galery .portfolio-box, #works #portfolio .container-xl .grid-galery .portfolio-box, #works #portfolio .container-xxl .grid-galery .portfolio-box {
+            height: 260px;
+            width: 200px; }
+            #works #portfolio .content-galery .grid-galery .portfolio-box img, #works #portfolio .container-sm .grid-galery .portfolio-box img, #works #portfolio .container-md .grid-galery .portfolio-box img, #works #portfolio .container-lg .grid-galery .portfolio-box img, #works #portfolio .container-xl .grid-galery .portfolio-box img, #works #portfolio .container-xxl .grid-galery .portfolio-box img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 15px; } }
+
+/* Menú responsive: Logotipo texto */
+@media (max-width: 325px) {
+  .navbar-brand p {
+    display: none; } }
