@@ -2,6 +2,31 @@
 @import "estructura";
 @import "tipografia";
 
+// Map-get
+$estilo-bold: (
+    ftamano: 15px,
+    fvariable: 400,
+    color: black,
+    subrayado: none,
+);
+
+$estilo-light: (
+    ftamano: 16px,
+    fvariable: 300,
+    color: grey,
+    subrayado: none,
+);
+
+// Mixin
+@mixin estilos ($width, $height, $color-borde, $borde-redondeado, $margen-inferior, $transicion) {
+    width: $width;
+    height: $height;
+    border-color: $color-borde;
+    border-radius: $borde-redondeado;
+    margin-bottom: $margen-inferior;
+    transition: $transicion;
+}
+
 /* Encabezado */
 
 /* Barra de navegación */
@@ -81,16 +106,6 @@
         }
     }
 }
-
-// Mixin
-@mixin estilos ($width, $height, $color-borde, $borde-redondeado, $margen-inferior, $transicion) {
-    width: $width;
-    height: $height;
-    border-color: $color-borde;
-    border-radius: $borde-redondeado;
-    margin-bottom: $margen-inferior;
-    transition: $transicion;
-}    
 
 /* Portfolio */
 
@@ -279,21 +294,6 @@
 }
 
 /* Breadcrum */
-
-// Map-get
-$estilo-bold: (
-    ftamano: 15px,
-    fvariable: 400,
-    color: black,
-    subrayado: none,
-);
-
-$estilo-light: (
-    ftamano: 16px,
-    fvariable: 300,
-    color: grey,
-    subrayado: none,
-);
 
 .back-project {
     font-size: map-get($estilo-bold, ftamano);
