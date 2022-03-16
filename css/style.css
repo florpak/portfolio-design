@@ -280,6 +280,7 @@ h2 {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
         gap: 18px;
+        margin: none;
         justify-content: center;
         align-items: center; }
         #works #portfolio .content-galery .grid-galery .portfolio-box, #works #portfolio .container-sm .grid-galery .portfolio-box, #works #portfolio .container-md .grid-galery .portfolio-box, #works #portfolio .container-lg .grid-galery .portfolio-box, #works #portfolio .container-xl .grid-galery .portfolio-box, #works #portfolio .container-xxl .grid-galery .portfolio-box {
@@ -404,6 +405,7 @@ h2 {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
           gap: 18px;
+          margin: none;
           justify-content: center;
           align-items: center; }
           #works #portfolio .content-galery .grid-galery .portfolio-box, #works #portfolio .container-sm .grid-galery .portfolio-box, #works #portfolio .container-md .grid-galery .portfolio-box, #works #portfolio .container-lg .grid-galery .portfolio-box, #works #portfolio .container-xl .grid-galery .portfolio-box, #works #portfolio .container-xxl .grid-galery .portfolio-box {

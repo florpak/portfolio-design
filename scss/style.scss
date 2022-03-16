@@ -27,6 +27,16 @@ $estilo-light: (
     transition: $transicion;
 }
 
+@mixin grilla ($grid, $columnas, $espacio, $margen,$justificado, $alineacion) {
+    display: $grid;
+    grid-template-columns: $columnas;
+    gap: $espacio;
+    margin: $margen;
+    justify-content: $justificado;
+    align-items: $alineacion;
+
+}
+
 /* Encabezado */
 
 /* Barra de navegación */
@@ -71,12 +81,7 @@ $estilo-light: (
 
     /* Alineación de elementos Cards */
     #content-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
-        gap: 60px;
-        margin: 40px 0px;
-        justify-content: center;
-        align-items: center;
+        @include grilla (grid, repeat(auto-fit, minmax(250px, 250px)), 60px, 40px 0px, center, center);
 
         /* Sección Servicios: Cards */
         .card-services {
@@ -124,12 +129,7 @@ $estilo-light: (
 
             /* Grilla Cards Proyectos */
             .grid-works {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
-                gap: 25px;
-                margin: 40px 0px;
-                justify-content: center;
-                align-items: center;
+                @include grilla (grid, repeat(auto-fit, minmax(400px, 400px)), 25px, 40px 0px, center, center);
 
                 /* Sección Proyectos: Cards */
                 .portfolio-box {
@@ -328,11 +328,7 @@ $estilo-light: (
 
             /* Grilla Cards Proyectos */
             .grid-galery {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
-                gap: 18px;
-                justify-content: center;
-                align-items: center;
+                @include grilla (grid, repeat(auto-fit, minmax(400px, 400px)), 18px, none, center, center);
 
                 .portfolio-box {
                     position: relative;
@@ -478,12 +474,7 @@ $estilo-light: (
                 margin-bottom: 50px;
 
                 .grid-works {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
-                    gap: 15px;
-                    margin: 20px 0px;
-                    justify-content: center;
-                    align-items: center;
+                    @include grilla (grid, repeat(auto-fit, minmax(200px, 200px)), 15px, 20px 0px, center, center);
 
                     .portfolio-box {
                         height: 260px;
@@ -514,11 +505,7 @@ $estilo-light: (
                 margin-bottom: 50px;
 
                 .grid-galery {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
-                    gap: 18px;
-                    justify-content: center;
-                    align-items: center;
+                    @include grilla (grid, repeat(auto-fit, minmax(200px, 200px)), 18px, none, center, center);
 
                     .portfolio-box {
                         height: 260px;
