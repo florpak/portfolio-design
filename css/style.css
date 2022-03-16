@@ -327,7 +327,7 @@ h2 {
     .content-cv .categoria .title_cat {
       margin-bottom: 10px; }
       .content-cv .categoria .title_cat h3 {
-        font-weight: 350;
+        font-weight: 300;
         font-size: 30px; }
     .content-cv .categoria .rubro {
       margin: 10px 30px 20px; }
@@ -336,7 +336,7 @@ h2 {
         font-size: 20px;
         margin-bottom: 3px; }
       .content-cv .categoria .rubro p {
-        font-weight: 350;
+        font-weight: 300;
         font-size: 17px; }
         .content-cv .categoria .rubro p li {
           margin-left: 25px;

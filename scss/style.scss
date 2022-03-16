@@ -5,14 +5,14 @@
 // Map-get
 $estilo-bold: (
     ftamano: 15px,
-    fvariable: 400,
+    fvariable: $bold,
     color: black,
     subrayado: none,
 );
 
 $estilo-light: (
     ftamano: 16px,
-    fvariable: 300,
+    fvariable: $regular,
     color: grey,
     subrayado: none,
 );
@@ -56,7 +56,7 @@ $estilo-light: (
     p {
         margin: 0px;
         margin-left: 10px;
-        font-weight: 800;
+        font-weight: $black;
         color: $color-principal;
     }
 }
@@ -101,7 +101,7 @@ $estilo-light: (
             /* Sección Servicios: Textos */
             h3 {
                 font-size: 25px;
-                font-weight: 500;
+                font-weight: $semibold;
                 margin-top: 15px;
             }
 
@@ -174,7 +174,7 @@ $estilo-light: (
 
                         .project-category {
                             font-size: 1.2rem;
-                            font-weight: 600;
+                            font-weight: $extrabold;
                             text-transform: uppercase;
                             color: white;
                         }
@@ -269,7 +269,7 @@ $estilo-light: (
 
 .title-head-page {
     font-size: 40px;
-    font-weight: 1000;
+    font-weight: $heavy;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -285,7 +285,7 @@ $estilo-light: (
 
 .title-project {
     @extend .title-head-page;
-    font-weight: 700;
+    font-weight: $ultrabold;
 }
 
 .description-project {
@@ -394,7 +394,7 @@ $estilo-light: (
             margin-bottom: 10px;
     
             h3 {
-                font-weight: 350;
+                font-weight: $regular;
                 font-size: 30px;
             }
         }
@@ -403,13 +403,13 @@ $estilo-light: (
             margin: 10px 30px 20px;
     
             h4 {
-                font-weight: 500;
+                font-weight: $semibold;
                 font-size: 20px;
                 margin-bottom: 3px;
             }
             
             p {
-                font-weight: 350;
+                font-weight: $regular;
                 font-size: 17px;
     
                 li {
